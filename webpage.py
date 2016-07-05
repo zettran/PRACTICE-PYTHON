@@ -9,7 +9,7 @@ base_url = 'http://www.nytimes.com'
 
 # http://docs.python-requests.org/en/master/
 r = requests.get(base_url)
-soup = BeautifulSoup(r.text)
+soup = BeautifulSoup(r.text)    # soup = BeautifulSoup(r.text, 'lxml')
 
 # Use Chrome inspect to find out which HTML tags contain all the titles 
 # https://www.crummy.com/software/BeautifulSoup/bs4/doc/#find-all
